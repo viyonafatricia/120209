@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Relawan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulir Pendaftaran Relawan</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <!-- Informasi Pribadi -->
+            <h3>Informasi Pribadi</h3>
+            <label>Nama Lengkap:</label>
+            <input type="text" name="nama" required>
+
+            <label>Tanggal Lahir:</label>
+            <input type="date" name="tanggal_lahir" required>
+
+            <label>Jenis Kelamin:</label>
+            <select name="jenis_kelamin" required>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+
+            <label>Alamat:</label>
+            <input type="text" name="alamat" required>
+
+            <label>Nomor Telepon:</label>
+            <input type="tel" name="telepon" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <!-- Informasi Pendidikan & Pekerjaan -->
+            <h3>Pendidikan & Pekerjaan</h3>
+            <label>Pendidikan Terakhir:</label>
+            <select name="pendidikan">
+                <option value="SMA">SMA</option>
+                <option value="D3">D3</option>
+                <option value="S1">S1</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+
+            <label>Pekerjaan Saat Ini:</label>
+            <input type="text" name="pekerjaan" required>
+
+            <label>Keahlian & Kompetensi:</label>
+            <input type="text" name="keahlian" required>
+
+            <!-- Pengalaman & Motivasi -->
+            <h3>Pengalaman & Motivasi</h3>
+            <label>Pernah Menjadi Volunteer?</label>
+            <select name="pengalaman">
+                <option value="Ya">Ya</option>
+                <option value="Tidak">Tidak</option>
+            </select>
+
+            <label>Motivasi Bergabung:</label>
+            <textarea name="motivasi" rows="3" required></textarea>
+
+            <label>Bidang yang Diminati:</label>
+            <select name="bidang">
+                <option value="Edukasi">Edukasi</option>
+                <option value="Sosial">Sosial</option>
+                <option value="Kesehatan">Kesehatan</option>
+                <option value="Lingkungan">Lingkungan</option>
+            </select>
+
+            <!-- Ketersediaan Waktu & Lokasi -->
+            <h3>Ketersediaan</h3>
+            <label>Bersedia Volunteer di Kota Mana?</label>
+            <input type="text" name="kota" required>
+
+            <label>Waktu yang Bisa Disediakan:</label>
+            <select name="waktu">
+                <option value="Weekend">Weekend</option>
+                <option value="Weekday">Weekday</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+            </select>
+
+            <!-- Persetujuan & Upload Dokumen -->
+            <h3>Persetujuan</h3>
+            <label>Upload CV atau Surat Motivasi (Opsional):</label>
+            <input type="file" name="cv">
+
+            <label>Upload Foto atau KTP (Jika diperlukan):</label>
+            <input type="file" name="foto">
+
+            <label>
+                <input type="checkbox" name="persetujuan" required>
+                Saya setuju dengan syarat & ketentuan
+            </label>
+
+            <button type="submit">Kirim Formulir</button>
+        </form>
+    </div>
+</body>
+</html>
